@@ -104,5 +104,5 @@ e também com captura da exceção no controller, porém nenhuma destas duas abo
 Resolução de problemas
 ======================
 Tudo deve simplesmente funcionar... porém em caso de problemas recomenda-se verificar o log (todo.log gerado
-quando invocado com o maven - perfil produção ou o console quando invocado com o java -jar
-Verificar ainda as dependências (versões do java e maven) e se necessário o desenvolvedor coloca-se à disposição
+quando invocado com o maven (perfil produção) ou o console (se perfil ativo for debug).
+Verificar ainda as dependências (versões do java e maven) e se necessário o desenvolvedor está à disposição.
