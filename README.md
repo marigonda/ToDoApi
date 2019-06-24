@@ -8,7 +8,7 @@ Informações sobre requisitos da API:
   - Toda tarefa possui um status (pending ou completed)
   - A API persiste os dados em um banco de dados
   - A API disponibiliza uma rota para listagem das tarefas e seu status (GET /todo)
-  - A API fornece uma rota para validar o funcionamento de seus componentes (GET /healthcheck)
+  - A API fornece uma rota para validar o funcionamento de seus componentes (GET /health)
   - A API fornece uma rota com indicadores de performance da API (ex: volume de requisições atendidas,
     tempo médio de serviço em milisegundos, etc) (GET /metrics)
   - Não contempla o Frontend para input dos dados na API. (Pode-se fazer também de forma simples utilizando SWAGER)
