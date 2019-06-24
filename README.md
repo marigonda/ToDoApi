@@ -42,7 +42,7 @@ Execução
  
  mvn spring-boot:run
  
- Ou ainda, com o java 8 no path, acessar a pasta /target e executar ToDoApi-0.0.1-SNAPSHOT.jar
+ Ou ainda, com o java 8 no path, acessar a pasta /bin e executar ToDoApi-0.0.1-SNAPSHOT.jar
  
  java -jar ToDoApi-0.0.1-SNAPSHOT.jar --server.ip=0.0.0.0 --server.port=8080
  
@@ -97,7 +97,7 @@ curl -i -X GET http://localhost:8080/health
 
 Problemas conhecidos
 ====================
-Há um problema com processamento em duplicidade de uma submissão válida após uma inválida gerando exceção HttpMessageNotReadableException
+Há um problema com processamento em duplicidade de uma submissão válida após uma inválida gerando exceção HttpMessageNotReadableException.
 Foram realizados testes retirando o pré e o pós processamento das submissões (inclusas para efetuar log personalizado)
 e também com captura da exceção no controller, porém nenhuma destas duas abordagens surtiu efeito.
 
