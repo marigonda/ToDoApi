@@ -55,3 +55,335 @@
 2019-06-24 13:28:36,541 INFO todo.example.ToDoApi.utils.LoadDatabase [main] Preloading ToDo(id=2, title=Iniciar ToDoAPI, status=pending)
 2019-06-24 13:28:36,773 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-1] Shutting down ExecutorService 'applicationTaskExecutor'
 2019-06-24 13:28:36,782 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-06-24 13:45:33,193 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-8] Before request [uri=/todo;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*", accept-encoding:"ASCII", content-length:"45", Content-Type:"application/json;charset=UTF-8"]]
+2019-06-24 13:45:33,201 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-8] After request [uri=/todo;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*", accept-encoding:"ASCII", content-length:"45", Content-Type:"application/json;charset=UTF-8"];payload={ "title": "Status_OK", "status": "pending" }]
+2019-06-24 13:45:33,201 INFO todo.example.ToDoApi.ToDoApiApplication [http-nio-8080-exec-8] startTime: 1561394733193, endTime: 1561394733201, totalTime: 8 ms
+2019-06-24 13:45:33,204 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-8] Before request [uri=/todo;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*", accept-encoding:"ASCII", content-length:"45", Content-Type:"application/json;charset=UTF-8"]]
+2019-06-24 13:45:33,210 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-8] After request [uri=/todo;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*", accept-encoding:"ASCII", content-length:"45", Content-Type:"application/json;charset=UTF-8"];payload={ "title": "Status_OK", "status": "pending" }]
+2019-06-24 13:45:33,211 INFO todo.example.ToDoApi.ToDoApiApplication [http-nio-8080-exec-8] startTime: 1561394733204, endTime: 1561394733211, totalTime: 7 ms
+2019-06-24 13:45:38,276 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-10] Before request [uri=/todo;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*", accept-encoding:"ASCII", content-length:"43", Content-Type:"application/json;charset=UTF-8"]]
+2019-06-24 13:45:38,279 WARN org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-10] Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `todo.example.ToDoApi.model.ToDo$ToDoStatus` from String "erro": value not one of declared Enum instance names: [completed, pending]; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `todo.example.ToDoApi.model.ToDo$ToDoStatus` from String "erro": value not one of declared Enum instance names: [completed, pending]
+ at [Source: (PushbackInputStream); line: 1, column: 36] (through reference chain: todo.example.ToDoApi.model.ToDo["status"])]
+2019-06-24 13:45:38,279 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-10] After request [uri=/todo;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*", accept-encoding:"ASCII", content-length:"43", Content-Type:"application/json;charset=UTF-8"];payload={ "title": "Status_ERR", "status": "erro" }]
+2019-06-24 13:45:38,279 INFO todo.example.ToDoApi.ToDoApiApplication [http-nio-8080-exec-10] startTime: 1561394738277, endTime: 1561394738279, totalTime: 2 ms
+2019-06-24 13:45:38,285 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-1] Before request [uri=/todo;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*", accept-encoding:"ASCII", content-length:"43", Content-Type:"application/json;charset=UTF-8"]]
+2019-06-24 13:45:38,288 WARN org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-1] Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `todo.example.ToDoApi.model.ToDo$ToDoStatus` from String "erro": value not one of declared Enum instance names: [completed, pending]; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `todo.example.ToDoApi.model.ToDo$ToDoStatus` from String "erro": value not one of declared Enum instance names: [completed, pending]
+ at [Source: (PushbackInputStream); line: 1, column: 36] (through reference chain: todo.example.ToDoApi.model.ToDo["status"])]
+2019-06-24 13:45:38,289 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-1] After request [uri=/todo;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*", accept-encoding:"ASCII", content-length:"43", Content-Type:"application/json;charset=UTF-8"];payload={ "title": "Status_ERR", "status": "erro" }]
+2019-06-24 13:45:38,290 INFO todo.example.ToDoApi.ToDoApiApplication [http-nio-8080-exec-1] startTime: 1561394738286, endTime: 1561394738290, totalTime: 4 ms
+2019-06-24 13:45:46,542 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-2] Before request [uri=/todo/1;client=127.0.0.1;headers=[host:"localhost:8080", user-agent:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:67.0) Gecko/20100101 Firefox/67.0", accept:"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", accept-language:"en-US,en;q=0.8,pt-BR;q=0.6,es;q=0.4,es-PY;q=0.2", accept-encoding:"gzip, deflate", connection:"keep-alive", upgrade-insecure-requests:"1"]]
+2019-06-24 13:45:46,569 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-2] After request [uri=/todo/1;client=127.0.0.1;headers=[host:"localhost:8080", user-agent:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:67.0) Gecko/20100101 Firefox/67.0", accept:"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", accept-language:"en-US,en;q=0.8,pt-BR;q=0.6,es;q=0.4,es-PY;q=0.2", accept-encoding:"gzip, deflate", connection:"keep-alive", upgrade-insecure-requests:"1"]]
+2019-06-24 13:45:46,569 INFO todo.example.ToDoApi.ToDoApiApplication [http-nio-8080-exec-2] startTime: 1561394746542, endTime: 1561394746569, totalTime: 27 ms
+2019-06-24 13:46:07,071 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-3] Before request [uri=/todo;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*", accept-encoding:"ASCII", Content-Type:"application/json;charset=UTF-8"]]
+2019-06-24 13:46:07,081 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-3] After request [uri=/todo;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*", accept-encoding:"ASCII", Content-Type:"application/json;charset=UTF-8"]]
+2019-06-24 13:46:07,082 INFO todo.example.ToDoApi.ToDoApiApplication [http-nio-8080-exec-3] startTime: 1561394767072, endTime: 1561394767082, totalTime: 10 ms
+2019-06-24 13:46:07,103 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-5] Before request [uri=/todo;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*", accept-encoding:"ASCII", content-length:"45", Content-Type:"application/json;charset=UTF-8"]]
+2019-06-24 13:46:07,111 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-5] After request [uri=/todo;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*", accept-encoding:"ASCII", content-length:"45", Content-Type:"application/json;charset=UTF-8"];payload={ "title": "Status_OK", "status": "pending" }]
+2019-06-24 13:46:07,111 INFO todo.example.ToDoApi.ToDoApiApplication [http-nio-8080-exec-5] startTime: 1561394767103, endTime: 1561394767111, totalTime: 8 ms
+2019-06-24 13:46:07,113 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-6] Before request [uri=/todo;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*", accept-encoding:"ASCII", content-length:"45", Content-Type:"application/json;charset=UTF-8"]]
+2019-06-24 13:46:07,118 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-6] After request [uri=/todo;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*", accept-encoding:"ASCII", content-length:"45", Content-Type:"application/json;charset=UTF-8"];payload={ "title": "Status_OK", "status": "pending" }]
+2019-06-24 13:46:07,118 INFO todo.example.ToDoApi.ToDoApiApplication [http-nio-8080-exec-6] startTime: 1561394767114, endTime: 1561394767118, totalTime: 4 ms
+2019-06-24 13:46:07,144 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-7] Before request [uri=/todo;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*", accept-encoding:"ASCII", content-length:"43", Content-Type:"application/json;charset=UTF-8"]]
+2019-06-24 13:46:07,145 WARN org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-7] Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `todo.example.ToDoApi.model.ToDo$ToDoStatus` from String "erro": value not one of declared Enum instance names: [completed, pending]; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `todo.example.ToDoApi.model.ToDo$ToDoStatus` from String "erro": value not one of declared Enum instance names: [completed, pending]
+ at [Source: (PushbackInputStream); line: 1, column: 36] (through reference chain: todo.example.ToDoApi.model.ToDo["status"])]
+2019-06-24 13:46:07,146 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-7] After request [uri=/todo;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*", accept-encoding:"ASCII", content-length:"43", Content-Type:"application/json;charset=UTF-8"];payload={ "title": "Status_ERR", "status": "erro" }]
+2019-06-24 13:46:07,146 INFO todo.example.ToDoApi.ToDoApiApplication [http-nio-8080-exec-7] startTime: 1561394767144, endTime: 1561394767146, totalTime: 2 ms
+2019-06-24 13:46:07,151 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-8] Before request [uri=/todo;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*", accept-encoding:"ASCII", content-length:"43", Content-Type:"application/json;charset=UTF-8"]]
+2019-06-24 13:46:07,153 WARN org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-8] Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `todo.example.ToDoApi.model.ToDo$ToDoStatus` from String "erro": value not one of declared Enum instance names: [completed, pending]; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `todo.example.ToDoApi.model.ToDo$ToDoStatus` from String "erro": value not one of declared Enum instance names: [completed, pending]
+ at [Source: (PushbackInputStream); line: 1, column: 36] (through reference chain: todo.example.ToDoApi.model.ToDo["status"])]
+2019-06-24 13:46:07,153 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-8] After request [uri=/todo;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*", accept-encoding:"ASCII", content-length:"43", Content-Type:"application/json;charset=UTF-8"];payload={ "title": "Status_ERR", "status": "erro" }]
+2019-06-24 13:46:07,153 INFO todo.example.ToDoApi.ToDoApiApplication [http-nio-8080-exec-8] startTime: 1561394767151, endTime: 1561394767153, totalTime: 2 ms
+2019-06-24 13:46:07,180 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-9] Before request [uri=/todo/1;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*"]]
+2019-06-24 13:46:07,199 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-9] After request [uri=/todo/1;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*"]]
+2019-06-24 13:46:07,199 INFO todo.example.ToDoApi.ToDoApiApplication [http-nio-8080-exec-9] startTime: 1561394767180, endTime: 1561394767199, totalTime: 19 ms
+2019-06-24 13:46:07,222 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-1] Before request [uri=/todo/1;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*"]]
+2019-06-24 13:46:07,226 WARN todo.example.ToDoApi.ToDoApiApplication [http-nio-8080-exec-1] Customized exception.... ToDo id='1' not found
+2019-06-24 13:46:07,228 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-1] After request [uri=/todo/1;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*"]]
+2019-06-24 13:46:07,229 INFO todo.example.ToDoApi.ToDoApiApplication [http-nio-8080-exec-1] startTime: 1561394767222, endTime: 1561394767229, totalTime: 7 ms
+2019-06-24 13:46:07,235 ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-8080-exec-1] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is todo.example.ToDoApi.exceptions.ToDoNotFoundException: Não foi possível encontrar tarefa id='1'. Seu acesso foi registrado.] with root cause
+todo.example.ToDoApi.exceptions.ToDoNotFoundException: Não foi possível encontrar tarefa id='1'. Seu acesso foi registrado.
+	at todo.example.ToDoApi.controllers.ToDoApiController.lambda$getToDo$0(ToDoApiController.java:53)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:397)
+	at todo.example.ToDoApi.controllers.ToDoApiController.getToDo(ToDoApiController.java:53)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:752)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at todo.example.ToDoApi.controllers.ToDoApiController$$EnhancerBySpringCGLIB$$7c5c5db0.getToDo(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.AbstractRequestLoggingFilter.doFilterInternal(AbstractRequestLoggingFilter.java:262)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:114)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:104)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2019-06-24 13:46:07,264 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-2] Before request [uri=/todo/3;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*"]]
+2019-06-24 13:46:07,269 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-2] After request [uri=/todo/3;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*"]]
+2019-06-24 13:46:07,269 INFO todo.example.ToDoApi.ToDoApiApplication [http-nio-8080-exec-2] startTime: 1561394767264, endTime: 1561394767269, totalTime: 5 ms
+2019-06-24 13:46:07,290 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-4] Before request [uri=/todo;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*", accept-encoding:"ASCII", content-length:"57", Content-Type:"application/json;charset=UTF-8"]]
+2019-06-24 13:46:07,293 WARN org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-4] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' not supported]
+2019-06-24 13:46:07,293 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-4] After request [uri=/todo;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*", accept-encoding:"ASCII", content-length:"57", Content-Type:"application/json;charset=UTF-8"]]
+2019-06-24 13:46:07,293 INFO todo.example.ToDoApi.ToDoApiApplication [http-nio-8080-exec-4] startTime: 1561394767291, endTime: 1561394767293, totalTime: 2 ms
+2019-06-24 13:46:07,299 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-5] Before request [uri=/todo/3;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*", accept-encoding:"ASCII", content-length:"57", Content-Type:"application/json;charset=UTF-8"]]
+2019-06-24 13:46:07,315 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-5] After request [uri=/todo/3;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*", accept-encoding:"ASCII", content-length:"57", Content-Type:"application/json;charset=UTF-8"];payload={ "id": "3", "title": "Alterado", "status": "compl]
+2019-06-24 13:46:07,315 INFO todo.example.ToDoApi.ToDoApiApplication [http-nio-8080-exec-5] startTime: 1561394767299, endTime: 1561394767315, totalTime: 16 ms
+2019-06-24 13:46:07,337 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-7] Before request [uri=/todo/3;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*"]]
+2019-06-24 13:46:07,342 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-7] After request [uri=/todo/3;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*"]]
+2019-06-24 13:46:07,342 INFO todo.example.ToDoApi.ToDoApiApplication [http-nio-8080-exec-7] startTime: 1561394767337, endTime: 1561394767342, totalTime: 5 ms
+2019-06-24 13:46:07,362 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-8] Before request [uri=/metrics/method.timed;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*"]]
+2019-06-24 13:46:07,368 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-8] After request [uri=/metrics/method.timed;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*"]]
+2019-06-24 13:46:07,368 INFO todo.example.ToDoApi.ToDoApiApplication [http-nio-8080-exec-8] startTime: 1561394767362, endTime: 1561394767368, totalTime: 6 ms
+2019-06-24 13:46:07,389 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-10] Before request [uri=/health;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*"]]
+2019-06-24 13:46:07,394 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-10] After request [uri=/health;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*"]]
+2019-06-24 13:46:07,395 INFO todo.example.ToDoApi.ToDoApiApplication [http-nio-8080-exec-10] startTime: 1561394767389, endTime: 1561394767395, totalTime: 6 ms
+2019-06-24 13:46:09,974 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-2] Before request [uri=/todo/1;client=127.0.0.1;headers=[host:"localhost:8080", user-agent:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:67.0) Gecko/20100101 Firefox/67.0", accept:"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", accept-language:"en-US,en;q=0.8,pt-BR;q=0.6,es;q=0.4,es-PY;q=0.2", accept-encoding:"gzip, deflate", connection:"keep-alive", upgrade-insecure-requests:"1", cache-control:"max-age=0"]]
+2019-06-24 13:46:09,994 WARN todo.example.ToDoApi.ToDoApiApplication [http-nio-8080-exec-2] Customized exception.... ToDo id='1' not found
+2019-06-24 13:46:09,995 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-2] After request [uri=/todo/1;client=127.0.0.1;headers=[host:"localhost:8080", user-agent:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:67.0) Gecko/20100101 Firefox/67.0", accept:"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", accept-language:"en-US,en;q=0.8,pt-BR;q=0.6,es;q=0.4,es-PY;q=0.2", accept-encoding:"gzip, deflate", connection:"keep-alive", upgrade-insecure-requests:"1", cache-control:"max-age=0"]]
+2019-06-24 13:46:09,996 INFO todo.example.ToDoApi.ToDoApiApplication [http-nio-8080-exec-2] startTime: 1561394769975, endTime: 1561394769996, totalTime: 21 ms
+2019-06-24 13:46:09,997 ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-8080-exec-2] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is todo.example.ToDoApi.exceptions.ToDoNotFoundException: Não foi possível encontrar tarefa id='1'. Seu acesso foi registrado.] with root cause
+todo.example.ToDoApi.exceptions.ToDoNotFoundException: Não foi possível encontrar tarefa id='1'. Seu acesso foi registrado.
+	at todo.example.ToDoApi.controllers.ToDoApiController.lambda$getToDo$0(ToDoApiController.java:53)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:397)
+	at todo.example.ToDoApi.controllers.ToDoApiController.getToDo(ToDoApiController.java:53)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:752)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at todo.example.ToDoApi.controllers.ToDoApiController$$EnhancerBySpringCGLIB$$7c5c5db0.getToDo(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.AbstractRequestLoggingFilter.doFilterInternal(AbstractRequestLoggingFilter.java:262)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:114)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:104)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2019-06-24 13:46:43,382 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-2] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-06-24 13:46:43,387 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-2] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-06-24 13:50:18,669 INFO todo.example.ToDoApi.ToDoApiApplication [main] Starting ToDoApiApplication on WebnowMacBookPro.local with PID 37492 (/Users/joao/Desktop/ToDoApi/target/classes started by joao in /Users/joao/Desktop/ToDoApi)
+2019-06-24 13:50:18,680 DEBUG todo.example.ToDoApi.ToDoApiApplication [main] Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-06-24 13:50:18,680 INFO todo.example.ToDoApi.ToDoApiApplication [main] The following profiles are active: prod
+2019-06-24 13:50:20,418 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-06-24 13:50:20,512 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 86ms. Found 1 repository interfaces.
+2019-06-24 13:50:21,087 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bb5bb5e9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-24 13:50:21,602 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2019-06-24 13:50:21,752 INFO org.springframework.web.context.ContextLoader [main] Root WebApplicationContext: initialization completed in 2949 ms
+2019-06-24 13:50:24,138 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-06-24 13:50:24,618 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [main] Filter 'requestLoggingFilter' configured for use
+2019-06-24 13:50:25,017 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-24 13:50:25,079 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-06-24 13:50:25,556 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 16 endpoint(s) beneath base path ''
+2019-06-24 13:50:25,679 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2019-06-24 13:50:25,685 INFO todo.example.ToDoApi.ToDoApiApplication [main] Started ToDoApiApplication in 8.159 seconds (JVM running for 10.206)
+2019-06-24 13:50:25,767 INFO todo.example.ToDoApi.utils.LoadDatabase [main] Preloading ToDo(id=1, title=Tomar Café, status=pending)
+2019-06-24 13:50:25,770 INFO todo.example.ToDoApi.utils.LoadDatabase [main] Preloading ToDo(id=2, title=Iniciar ToDoAPI, status=pending)
+2019-06-24 13:50:25,771 DEBUG todo.example.ToDoApi.ToDoApiApplication [main] ToDoApi Application started...
+2019-06-24 13:50:26,229 INFO org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(3)-192.168.1.164] Initializing Servlet 'dispatcherServlet'
+2019-06-24 13:50:26,247 INFO org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(3)-192.168.1.164] Completed initialization in 17 ms
+2019-06-24 13:50:29,074 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-1] Before request [uri=/todo/1;client=127.0.0.1;headers=[host:"localhost:8080", user-agent:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:67.0) Gecko/20100101 Firefox/67.0", accept:"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", accept-language:"en-US,en;q=0.8,pt-BR;q=0.6,es;q=0.4,es-PY;q=0.2", accept-encoding:"gzip, deflate", connection:"keep-alive", upgrade-insecure-requests:"1", cache-control:"max-age=0"]]
+2019-06-24 13:50:29,199 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-1] After request [uri=/todo/1;client=127.0.0.1;headers=[host:"localhost:8080", user-agent:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:67.0) Gecko/20100101 Firefox/67.0", accept:"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", accept-language:"en-US,en;q=0.8,pt-BR;q=0.6,es;q=0.4,es-PY;q=0.2", accept-encoding:"gzip, deflate", connection:"keep-alive", upgrade-insecure-requests:"1", cache-control:"max-age=0"]]
+2019-06-24 13:50:29,200 INFO todo.example.ToDoApi.ToDoApiApplication [http-nio-8080-exec-1] startTime: 1561395029076, endTime: 1561395029199, totalTime: 123 ms
+2019-06-24 13:50:44,908 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-2] Before request [uri=/todo/1;client=127.0.0.1;headers=[host:"localhost:8080", user-agent:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:67.0) Gecko/20100101 Firefox/67.0", accept:"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", accept-language:"en-US,en;q=0.8,pt-BR;q=0.6,es;q=0.4,es-PY;q=0.2", accept-encoding:"gzip, deflate", connection:"keep-alive", upgrade-insecure-requests:"1", cache-control:"max-age=0"]]
+2019-06-24 13:50:44,926 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-2] After request [uri=/todo/1;client=127.0.0.1;headers=[host:"localhost:8080", user-agent:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:67.0) Gecko/20100101 Firefox/67.0", accept:"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", accept-language:"en-US,en;q=0.8,pt-BR;q=0.6,es;q=0.4,es-PY;q=0.2", accept-encoding:"gzip, deflate", connection:"keep-alive", upgrade-insecure-requests:"1", cache-control:"max-age=0"]]
+2019-06-24 13:50:44,926 INFO todo.example.ToDoApi.ToDoApiApplication [http-nio-8080-exec-2] startTime: 1561395044909, endTime: 1561395044926, totalTime: 17 ms
+2019-06-24 13:50:50,178 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-4] Before request [uri=/todo;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*", accept-encoding:"ASCII", Content-Type:"application/json;charset=UTF-8"]]
+2019-06-24 13:50:50,306 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-4] After request [uri=/todo;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*", accept-encoding:"ASCII", Content-Type:"application/json;charset=UTF-8"]]
+2019-06-24 13:50:50,307 INFO todo.example.ToDoApi.ToDoApiApplication [http-nio-8080-exec-4] startTime: 1561395050179, endTime: 1561395050307, totalTime: 128 ms
+2019-06-24 13:50:50,331 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-3] Before request [uri=/todo;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*", accept-encoding:"ASCII", content-length:"45", Content-Type:"application/json;charset=UTF-8"]]
+2019-06-24 13:50:50,370 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-3] After request [uri=/todo;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*", accept-encoding:"ASCII", content-length:"45", Content-Type:"application/json;charset=UTF-8"];payload={ "title": "Status_OK", "status": "pending" }]
+2019-06-24 13:50:50,371 INFO todo.example.ToDoApi.ToDoApiApplication [http-nio-8080-exec-3] startTime: 1561395050331, endTime: 1561395050371, totalTime: 40 ms
+2019-06-24 13:50:50,373 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-3] Before request [uri=/todo;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*", accept-encoding:"ASCII", content-length:"45", Content-Type:"application/json;charset=UTF-8"]]
+2019-06-24 13:50:50,379 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-3] After request [uri=/todo;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*", accept-encoding:"ASCII", content-length:"45", Content-Type:"application/json;charset=UTF-8"];payload={ "title": "Status_OK", "status": "pending" }]
+2019-06-24 13:50:50,379 INFO todo.example.ToDoApi.ToDoApiApplication [http-nio-8080-exec-3] startTime: 1561395050373, endTime: 1561395050379, totalTime: 6 ms
+2019-06-24 13:50:50,399 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-5] Before request [uri=/todo;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*", accept-encoding:"ASCII", content-length:"43", Content-Type:"application/json;charset=UTF-8"]]
+2019-06-24 13:50:50,407 WARN org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-5] Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `todo.example.ToDoApi.model.ToDo$ToDoStatus` from String "erro": value not one of declared Enum instance names: [completed, pending]; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `todo.example.ToDoApi.model.ToDo$ToDoStatus` from String "erro": value not one of declared Enum instance names: [completed, pending]
+ at [Source: (PushbackInputStream); line: 1, column: 36] (through reference chain: todo.example.ToDoApi.model.ToDo["status"])]
+2019-06-24 13:50:50,408 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-5] After request [uri=/todo;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*", accept-encoding:"ASCII", content-length:"43", Content-Type:"application/json;charset=UTF-8"];payload={ "title": "Status_ERR", "status": "erro" }]
+2019-06-24 13:50:50,408 INFO todo.example.ToDoApi.ToDoApiApplication [http-nio-8080-exec-5] startTime: 1561395050399, endTime: 1561395050408, totalTime: 9 ms
+2019-06-24 13:50:50,428 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-6] Before request [uri=/todo;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*", accept-encoding:"ASCII", content-length:"43", Content-Type:"application/json;charset=UTF-8"]]
+2019-06-24 13:50:50,431 WARN org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-6] Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `todo.example.ToDoApi.model.ToDo$ToDoStatus` from String "erro": value not one of declared Enum instance names: [completed, pending]; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `todo.example.ToDoApi.model.ToDo$ToDoStatus` from String "erro": value not one of declared Enum instance names: [completed, pending]
+ at [Source: (PushbackInputStream); line: 1, column: 36] (through reference chain: todo.example.ToDoApi.model.ToDo["status"])]
+2019-06-24 13:50:50,432 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-6] After request [uri=/todo;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*", accept-encoding:"ASCII", content-length:"43", Content-Type:"application/json;charset=UTF-8"];payload={ "title": "Status_ERR", "status": "erro" }]
+2019-06-24 13:50:50,433 INFO todo.example.ToDoApi.ToDoApiApplication [http-nio-8080-exec-6] startTime: 1561395050429, endTime: 1561395050433, totalTime: 4 ms
+2019-06-24 13:50:50,457 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-7] Before request [uri=/todo/1;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*"]]
+2019-06-24 13:50:50,478 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-7] After request [uri=/todo/1;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*"]]
+2019-06-24 13:50:50,478 INFO todo.example.ToDoApi.ToDoApiApplication [http-nio-8080-exec-7] startTime: 1561395050457, endTime: 1561395050478, totalTime: 21 ms
+2019-06-24 13:50:50,501 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-8] Before request [uri=/todo/1;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*"]]
+2019-06-24 13:50:50,507 WARN todo.example.ToDoApi.ToDoApiApplication [http-nio-8080-exec-8] Customized exception.... ToDo id='1' not found
+2019-06-24 13:50:50,511 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-8] After request [uri=/todo/1;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*"]]
+2019-06-24 13:50:50,512 INFO todo.example.ToDoApi.ToDoApiApplication [http-nio-8080-exec-8] startTime: 1561395050501, endTime: 1561395050512, totalTime: 11 ms
+2019-06-24 13:50:50,532 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-9] Before request [uri=/todo/1;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*"]]
+2019-06-24 13:50:50,539 WARN todo.example.ToDoApi.ToDoApiApplication [http-nio-8080-exec-9] Customized exception.... ToDo id='1' not found
+2019-06-24 13:50:50,542 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-9] After request [uri=/todo/1;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*"]]
+2019-06-24 13:50:50,543 INFO todo.example.ToDoApi.ToDoApiApplication [http-nio-8080-exec-9] startTime: 1561395050532, endTime: 1561395050543, totalTime: 11 ms
+2019-06-24 13:50:50,561 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-10] Before request [uri=/todo;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*", accept-encoding:"ASCII", content-length:"57", Content-Type:"application/json;charset=UTF-8"]]
+2019-06-24 13:50:50,563 WARN org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-10] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' not supported]
+2019-06-24 13:50:50,563 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-10] After request [uri=/todo;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*", accept-encoding:"ASCII", content-length:"57", Content-Type:"application/json;charset=UTF-8"]]
+2019-06-24 13:50:50,563 INFO todo.example.ToDoApi.ToDoApiApplication [http-nio-8080-exec-10] startTime: 1561395050561, endTime: 1561395050563, totalTime: 2 ms
+2019-06-24 13:50:50,568 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-1] Before request [uri=/todo/1;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*", accept-encoding:"ASCII", content-length:"57", Content-Type:"application/json;charset=UTF-8"]]
+2019-06-24 13:50:50,581 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-1] After request [uri=/todo/1;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*", accept-encoding:"ASCII", content-length:"57", Content-Type:"application/json;charset=UTF-8"];payload={ "id": "1", "title": "Alterado", "status": "compl]
+2019-06-24 13:50:50,581 INFO todo.example.ToDoApi.ToDoApiApplication [http-nio-8080-exec-1] startTime: 1561395050568, endTime: 1561395050581, totalTime: 13 ms
+2019-06-24 13:50:50,602 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-2] Before request [uri=/todo/1;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*"]]
+2019-06-24 13:50:50,606 WARN todo.example.ToDoApi.ToDoApiApplication [http-nio-8080-exec-2] Customized exception.... ToDo id='1' not found
+2019-06-24 13:50:50,608 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-2] After request [uri=/todo/1;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*"]]
+2019-06-24 13:50:50,608 INFO todo.example.ToDoApi.ToDoApiApplication [http-nio-8080-exec-2] startTime: 1561395050602, endTime: 1561395050608, totalTime: 6 ms
+2019-06-24 13:50:50,628 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-4] Before request [uri=/metrics/method.timed;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*"]]
+2019-06-24 13:50:50,662 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-4] After request [uri=/metrics/method.timed;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*"]]
+2019-06-24 13:50:50,662 INFO todo.example.ToDoApi.ToDoApiApplication [http-nio-8080-exec-4] startTime: 1561395050628, endTime: 1561395050662, totalTime: 34 ms
+2019-06-24 13:50:50,684 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-3] Before request [uri=/health;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*"]]
+2019-06-24 13:50:50,688 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-3] After request [uri=/health;client=0:0:0:0:0:0:0:1;headers=[host:"localhost:8080", user-agent:"curl/7.54.0", accept:"*/*"]]
+2019-06-24 13:50:50,688 INFO todo.example.ToDoApi.ToDoApiApplication [http-nio-8080-exec-3] startTime: 1561395050684, endTime: 1561395050688, totalTime: 4 ms
+2019-06-24 13:50:52,736 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-5] Before request [uri=/todo/1;client=127.0.0.1;headers=[host:"localhost:8080", user-agent:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:67.0) Gecko/20100101 Firefox/67.0", accept:"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", accept-language:"en-US,en;q=0.8,pt-BR;q=0.6,es;q=0.4,es-PY;q=0.2", accept-encoding:"gzip, deflate", connection:"keep-alive", upgrade-insecure-requests:"1", cache-control:"max-age=0"]]
+2019-06-24 13:50:52,745 WARN todo.example.ToDoApi.ToDoApiApplication [http-nio-8080-exec-5] Customized exception.... ToDo id='1' not found
+2019-06-24 13:50:52,794 DEBUG todo.example.ToDoApi.utils.ToDoCustomLoggingFilter [http-nio-8080-exec-5] After request [uri=/todo/1;client=127.0.0.1;headers=[host:"localhost:8080", user-agent:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:67.0) Gecko/20100101 Firefox/67.0", accept:"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", accept-language:"en-US,en;q=0.8,pt-BR;q=0.6,es;q=0.4,es-PY;q=0.2", accept-encoding:"gzip, deflate", connection:"keep-alive", upgrade-insecure-requests:"1", cache-control:"max-age=0"]]
+2019-06-24 13:50:52,794 INFO todo.example.ToDoApi.ToDoApiApplication [http-nio-8080-exec-5] startTime: 1561395052736, endTime: 1561395052794, totalTime: 58 ms
+2019-06-24 13:51:44,335 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-2] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-06-24 13:51:44,339 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-2] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-06-24 13:51:50,919 INFO todo.example.ToDoApi.ToDoApiApplicationTests [main] Starting ToDoApiApplicationTests on WebnowMacBookPro.local with PID 37533 (started by joao in /Users/joao/Desktop/ToDoApi)
+2019-06-24 13:51:50,919 DEBUG todo.example.ToDoApi.ToDoApiApplicationTests [main] Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-06-24 13:51:50,920 INFO todo.example.ToDoApi.ToDoApiApplicationTests [main] The following profiles are active: prod
+2019-06-24 13:51:52,878 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-06-24 13:51:53,049 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 152ms. Found 1 repository interfaces.
+2019-06-24 13:51:54,131 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$efa2c2d1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-24 13:51:56,856 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-06-24 13:51:59,099 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-24 13:51:59,216 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-06-24 13:52:00,687 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 16 endpoint(s) beneath base path ''
+2019-06-24 13:52:00,797 INFO todo.example.ToDoApi.ToDoApiApplicationTests [main] Started ToDoApiApplicationTests in 10.732 seconds (JVM running for 12.252)
+2019-06-24 13:52:00,880 INFO todo.example.ToDoApi.utils.LoadDatabase [main] Preloading ToDo(id=1, title=Tomar Café, status=pending)
+2019-06-24 13:52:00,883 INFO todo.example.ToDoApi.utils.LoadDatabase [main] Preloading ToDo(id=2, title=Iniciar ToDoAPI, status=pending)
+2019-06-24 13:52:01,111 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-1] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-06-24 13:52:01,120 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-1] Closing JPA EntityManagerFactory for persistence unit 'default'

@@ -4,6 +4,7 @@ import java.util.List;
 import io.micrometer.core.annotation.Timed;
 import io.micrometer.core.instrument.Metrics;
 import org.springframework.context.annotation.Bean;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.filter.CommonsRequestLoggingFilter;
 import todo.example.ToDoApi.model.ToDo;
@@ -98,4 +99,13 @@ public class ToDoApiController {
         return loggingFilter;
     }
 
+    @ControllerAdvice
+    public class ToDoNotFoundWarnMsg {
+        @ResponseBody
+        @ExceptionHandler(ToDoNotFoundException.class)
+        @ResponseStatus(HttpStatus.NOT_FOUND)
+        String todoNotFoundHandler(ToDoNotFoundException ex) {
+            return ex.getMessage();
+        }
+    }
 }
